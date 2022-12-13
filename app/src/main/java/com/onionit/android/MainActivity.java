@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.joanzapata.iconify.IconDrawable;
@@ -14,6 +15,7 @@ import com.onionit.android.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     protected ActivityMainBinding activityMainBinding;
+    protected FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +24,17 @@ public class MainActivity extends AppCompatActivity {
         Iconify.with(new FontAwesomeModule());
 
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(activityMainBinding.getRoot());
+        fragmentManager = getSupportFragmentManager();
 
+        setContentView(activityMainBinding.getRoot());
         setSupportActionBar(activityMainBinding.toolbar);
 
         activityMainBinding.fab.setImageDrawable(new IconDrawable(this, FontAwesomeIcons.fa_support));
-
         activityMainBinding.fab.setOnClickListener(this.getFabOnClickListener());
+
+        if (savedInstanceState == null) {
+            fragmentManager.beginTransaction().setReorderingAllowed(true).add(R.id.fragmentView, HomeFragment.class, null).commit();
+        }
     }
 
     @Override
