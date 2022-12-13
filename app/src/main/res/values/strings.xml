@@ -17,4 +17,10 @@
     <string name="write_label_btn">Ghi</string>
     <string name="delete_label_btn">Xoá</string>
 
+    <string name="notification_id_label">Mã thông báo:</string>
+    <string name="notification_title_label">Tiêu đề:</string>
+    <string name="notification_message_label">Nội dung:</string>
+    <string name="random_label_btn">Ngẫu nhiên</string>
+    <string name="create_label_btn">Tạo</string>
+
 </resources>

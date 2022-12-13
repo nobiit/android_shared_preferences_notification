@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    tools:context="com.onionit.android.NotificationFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/notificationId"
+                android:text="@string/notification_id_label"
+                android:textColor="@color/labelColor" />
+
+            <EditText
+                android:id="@+id/notificationId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="300dp"
+                android:backgroundTint="@color/valueColor"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/valueColor" />
+
+            <Button
+                android:id="@+id/randomNotificationIdBtn"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/randomButtonBackgroundColor"
+                android:text="@string/random_label_btn"
+                android:textColor="@color/buttonColor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/notificationTitle"
+                android:text="@string/notification_title_label"
+                android:textColor="@color/labelColor" />
+
+            <EditText
+                android:id="@+id/notificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300dp"
+                android:backgroundTint="@color/valueColor"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="@color/valueColor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/notificationMessage"
+                android:text="@string/notification_message_label"
+                android:textColor="@color/labelColor" />
+
+            <EditText
+                android:id="@+id/notificationMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300dp"
+                android:backgroundTint="@color/valueColor"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="@color/valueColor" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/buttonDisabledBackgroundColor"
+            android:enabled="false"
+            android:text="@string/create_label_btn"
+            android:textColor="@color/buttonColor" />
+    </LinearLayout>
+</LinearLayout>

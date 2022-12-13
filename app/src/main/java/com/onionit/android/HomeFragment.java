@@ -36,6 +36,7 @@ public class HomeFragment extends Fragment {
             fragmentManager = getParentFragmentManager();
 
             fragmentHomeBinding.sharedPreferenceBtn.setOnClickListener(getSharedPreferenceBtnOnClickListener());
+            fragmentHomeBinding.notificationBtn.setOnClickListener(getNotificationBtnOnClickListener());
         }
 
         return view;
@@ -43,5 +44,9 @@ public class HomeFragment extends Fragment {
 
     protected View.OnClickListener getSharedPreferenceBtnOnClickListener() {
         return view -> fragmentManager.beginTransaction().setCustomAnimations(R.anim.slide_in, R.anim.fade_out, R.anim.fade_in, R.anim.slide_out).replace(R.id.fragmentView, SharedPreferenceFragment.class, null).setReorderingAllowed(true).addToBackStack(null).commit();
+    }
+
+    protected View.OnClickListener getNotificationBtnOnClickListener() {
+        return view -> fragmentManager.beginTransaction().setCustomAnimations(R.anim.slide_in, R.anim.fade_out, R.anim.fade_in, R.anim.slide_out).replace(R.id.fragmentView, NotificationFragment.class, null).setReorderingAllowed(true).addToBackStack(null).commit();
     }
 }

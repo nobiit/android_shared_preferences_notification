@@ -5,6 +5,7 @@
     <color name="grey_700">#616161</color>
     <color name="grey_900">#212121</color>
     <color name="blue_a700">#304FFE</color>
+    <color name="brown_300">#A1887F</color>
     <color name="white">#FFFFFF</color>
 
     <color name="toolbarColor">@color/teal_700</color>
@@ -13,5 +14,10 @@
     <color name="buttonBackgroundColor">@color/blue_a700</color>
     <color name="buttonColor">@color/white</color>
     <color name="copyrightColor">@color/grey_700</color>
+
+    <color name="labelColor">@color/grey_700</color>
+    <color name="valueColor">@color/grey_900</color>
+    <color name="randomButtonBackgroundColor">@color/brown_300</color>
+    <color name="buttonDisabledBackgroundColor">@color/grey_700</color>
 
 </resources>
