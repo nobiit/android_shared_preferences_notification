@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Shared Preference &amp; Notification</string>
+    <string name="welcome_line1">Dự án Demo môn lập trình mạng</string>
+    <string name="welcome_line2">Nhóm OnionIT</string>
+    <string name="shared_preference_title">Shared Preference</string>
+    <string name="notification_title">Notification</string>
+    <string name="question_button_label">Question Button</string>
+    <string name="copyright">Bản quyền thuộc về nhóm OnionIT, copy source nhớ ghi nguồn</string>
+
+</resources>

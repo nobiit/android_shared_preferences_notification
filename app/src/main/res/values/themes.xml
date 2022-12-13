@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="Theme.SharedPreferenceNotification" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+
+    <style name="Theme.SharedPreferenceNotification.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SharedPreferenceNotification.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SharedPreferenceNotification.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
