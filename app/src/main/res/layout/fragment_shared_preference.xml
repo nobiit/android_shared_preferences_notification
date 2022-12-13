@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    tools:context="com.onionit.android.SharedPreferenceFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/sharedPreferenceName"
+                android:text="@string/shared_preference_name_label"
+                android:textColor="@color/labelColor" />
+
+            <EditText
+                android:id="@+id/sharedPreferenceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300dp"
+                android:backgroundTint="@color/valueColor"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="@color/valueColor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/sharedPreferenceKey"
+                android:text="@string/shared_preference_key_label"
+                android:textColor="@color/labelColor" />
+
+            <EditText
+                android:id="@+id/sharedPreferenceKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300dp"
+                android:backgroundTint="@color/valueColor"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="@color/valueColor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/sharedPreferenceValue"
+                android:text="@string/shared_preference_value_label"
+                android:textColor="@color/labelColor" />
+
+            <EditText
+                android:id="@+id/sharedPreferenceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300dp"
+                android:backgroundTint="@color/valueColor"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="@color/valueColor" />
+        </TableRow>
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/readBtn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/buttonDisabledBackgroundColor"
+            android:enabled="false"
+            android:text="@string/read_label_btn"
+            android:textColor="@color/buttonColor" />
+
+        <Button
+            android:id="@+id/writeBtn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/buttonDisabledBackgroundColor"
+            android:enabled="false"
+            android:text="@string/write_label_btn"
+            android:textColor="@color/buttonColor" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/buttonDisabledBackgroundColor"
+            android:enabled="false"
+            android:text="@string/delete_label_btn"
+            android:textColor="@color/buttonColor" />
+    </TableRow>
+</LinearLayout>

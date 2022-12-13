@@ -69,6 +69,7 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/sharedPreferenceBtn"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginVertical="10dp"
@@ -77,6 +78,7 @@
             android:textColor="@color/buttonColor" />
 
         <Button
+            android:id="@+id/notificationBtn"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginVertical="10dp"

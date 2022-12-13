@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         activityMainBinding.fab.setOnClickListener(this.getFabOnClickListener());
 
         if (savedInstanceState == null) {
-            fragmentManager.beginTransaction().setReorderingAllowed(true).add(R.id.fragmentView, HomeFragment.class, null).commit();
+            fragmentManager.beginTransaction().add(R.id.fragmentView, HomeFragment.class, null).commit();
         }
     }
 
@@ -43,7 +43,13 @@ public class MainActivity extends AppCompatActivity {
         this.activityMainBinding = null;
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.setTitle(getString(R.string.app_name));
+    }
+
     protected View.OnClickListener getFabOnClickListener() {
-        return view -> Snackbar.make(view, "Đây là dự án Demo môn lập trình Android của nhóm OnionIT", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+        return view -> Snackbar.make(view, getString(R.string.fab_message), Snackbar.LENGTH_LONG).setAction("Action", null).show();
     }
 }
